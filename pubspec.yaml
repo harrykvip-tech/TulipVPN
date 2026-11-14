@@ -1,0 +1,32 @@
+name: tulip_vpn
+description: Tulip VPN - private V2Ray/Xray client (VLESS, VMess, Trojan, Shadowsocks).
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_v2ray_client: ^3.4.1
+  http: ^1.2.2
+  shared_preferences: ^2.3.2
+  mobile_scanner: ^6.0.2
+  qr_flutter: ^4.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon.png
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon.png"
+  min_sdk_android: 24
